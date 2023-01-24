@@ -97,9 +97,14 @@ Masukan pilihan disini : '''))
 
 def hapus_data():
         masnim = int(input("masukan data NIM ke berapa yang ingin dihapus : "))
+        masnama = int(input("masukkan data Nama ke berapa yang ingin dihapus : "))
+        masprodi = int(input("masukkan data Prodi ke berapa yang ingin dihapus : "))
         k = masnim
-        print('Data NIM yang dihapus adalah data ke-', k)
+        l = masnama
+        m = masprodi
         del nim[k]
+        del nama[l]
+        del prodi[m]
         out = eval(input('tekan apapun untuk kembali ke menu awal : '))
         if out == 1:
             pilihannya()
