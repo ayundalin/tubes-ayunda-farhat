@@ -32,11 +32,14 @@ def masukkan_data():
     nama.append(masnama)
     masprodi = input("masukan prodi : ")
     prodi.append(masprodi)
+    f = open("tes.txt", 'a')
+    f.writelines([masnim+','+masnama+','+masprodi+'\n'])
     pilihannya()
+    f.close()
 
 def tampilkan_data() :
-    print('nim : ', *nim, sep=' |')
-    print('nama : ', *nama, sep=' |')
+    print('nim   : ', *nim, sep=' |')
+    print('nama  : ', *nama, sep=' |')
     print('prodi : ', *prodi, sep=' |')
     out = eval(input('tekan angka apapun untuk kembali ke menu awal : '))
     if out == 1:

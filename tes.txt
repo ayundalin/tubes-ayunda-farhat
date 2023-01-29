@@ -3,5 +3,3 @@
 1102220003,verlyta,kecantikan
 1102220002,farhat,teknik mesin
 1102220001,ayunda,teknik komputer
-123456,sghs,fbwh
-3254,rgu,aerge
